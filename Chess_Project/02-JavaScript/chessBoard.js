@@ -5,6 +5,7 @@ class ChessBoard {
 
     draw() {
         let table = document.createElement("table");
+        table.id = "chessBoard";
         for(let row=0; row<8; row++)
         {
             let tr = document.createElement("tr");
