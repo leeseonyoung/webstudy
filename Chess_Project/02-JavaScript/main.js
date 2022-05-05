@@ -4,11 +4,13 @@ window.onload = function () { // 함수를 할당
     let chessBoard = new ChessBoard();
     chessBoard.draw();
 
-    //let blackKnight1 = new ChessPiece({type:"Kn", color:"black", row:0, col:1});
+    chessBoard.init();
 
     const chessPieces = {};
 
     /*
+    //let blackKnight1 = new ChessPiece({type:"Kn", color:"black", row:0, col:1});
+
     chessPieces.pawn0 = new ChessPiece({type:"P", color:"black", row:1, col:0});
     chessPieces.pawn0 = new ChessPiece({type:"P", color:"black", row:1, col:0});
     chessPieces.pawn0 = new ChessPiece({type:"P", color:"black", row:1, col:0});
@@ -54,8 +56,6 @@ window.onload = function () { // 함수를 할당
                 break;
         }
     }
-
-chessBoart.init(ChessPiece)
 
     chessBoard.putPiece({
         piece: chessPieces['blackPawn' + num],
